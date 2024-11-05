@@ -1,0 +1,49 @@
+.header-component {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Vertically center the items */
+    padding: 10px; /* Add padding around the header */
+    width: 100%; /* Set the width to fill the parent container */
+    max-width: 1200px; /* Set a maximum width for the header component */
+    height: 110px; /* Set a specific height for the header component */
+    /*background-color: rgba(107, 64, 140, 0.1); /* Light background */
+    gap: 10px; /* Space between elements */
+  }
+  
+  .sender-image {
+    width: 50px; /* Adjust image size */
+    height: 50px; /* Adjust image size */
+    border-radius: 50%; /* Circular image */
+  }
+  
+  .header-info {
+    display: flex; /* Align name and text vertically */
+    flex-direction: column; /* Stack name and text */
+    flex-grow: 1; /* Allow this section to grow */
+  }
+  
+  .sender-name {
+    font-weight: bold; /* Bold sender name */
+    color: #333; /* Color for the sender's name */
+  }
+  
+  .sender-text {
+    color: white; /* Color for the text message */
+    font-size: 14px; /* Font size for the message */
+  }
+  
+  .icon-section {
+    display: flex; /* Align icons horizontally */
+    gap: 10px; /* Space between icons */
+  }
+  
+  .icon-section fa-icon {
+    color: #333; /* Icon color */
+    cursor: pointer; /* Change cursor on hover */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  /* Optional: Add hover effect for icons */
+  .icon-section fa-icon:hover {
+    color: rgba(107, 64, 140, 0.7); /* Change color on hover */
+  }
+  

@@ -1,0 +1,137 @@
+/* Full-page background with centering */
+:host {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('../../../../public/bg.jpg'); /* Set the path to your background image */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Container styles */
+.my-container {
+    max-width: 600px;
+    width: 100%;
+    height: 600px;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.4); /* White background with reduced opacity */
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  }
+  
+  /* Card styles */
+  .card {
+    border: none; /* Remove default card border */
+    background-color: rgba(255, 255, 255, 0.0);
+    width: 100%; /* Optional: Full width of the container */
+    max-width: 400px; /* Set a maximum width for the card */
+  }
+  
+
+  .card-header{
+    margin: 0;
+    border: none;
+    background-color: rgba(255, 255, 255, 0); 
+  }
+ /* Center the title text */
+.card-header h3 {
+    margin: 0;
+    border: none;
+    background-color: rgba(255, 255, 255, 0); 
+    color: #ffffff; /* White text color */
+    font-size: 2rem; /* Adjust font size as needed */
+    text-align: center; /* Center the text */
+    text-shadow: 
+      0 0 5px #ffffff,   /* White glow */
+      0 0 10px #ffffff,  /* Brighter white glow */
+      0 0 20px #a363d3,  /* Neon purple glow */
+      0 0 30px #a363d3;  /* Extended neon purple glow */
+    
+    animation: neon 1.5s ease-in-out infinite alternate; /* Smooth neon animation */
+  }
+  
+  /* Animation for glowing effect */
+  @keyframes neon {
+    0% {
+      text-shadow: 
+        0 0 5px #ffffff,
+        0 0 10px #ffffff,
+        0 0 20px #a363d3,
+        0 0 30px #a363d3;
+    }
+    50% {
+      text-shadow: 
+        0 0 10px #ffffff,
+        0 0 20px #ffffff,
+        0 0 30px #a363d3,
+        0 0 40px #a363d3;
+    }
+    100% {
+      text-shadow: 
+        0 0 5px #ffffff,
+        0 0 10px #ffffff,
+        0 0 20px #a363d3,
+        0 0 30px #a363d3;
+    }
+  }
+
+  /* Input styles */
+.form-control {
+    background-color: rgba(163, 99, 211, 0.4); /* Color with opacity */
+    border: 1px solid rgba(163, 99, 211, 0.5); /* Optional: Add a subtle border with opacity */
+    border-radius: 4px; /* Optional: Rounded corners */
+    color: #ffffff; /* White text color */
+  }
+  
+  /* Placeholder text color */
+  .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Light placeholder color */
+    font-weight: bold;
+  }
+  
+  /* Focus effect */
+  .form-control:focus {
+    border-color: rgba(163, 99, 211, 0.8); /* Slightly lighter border on focus */
+    outline: none; /* Remove default outline */
+  }
+  
+  /* Custom styles for the link */
+.btn-link {
+    color: #a363d3; /* Change link color to your desired color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make the text bold */
+    font-size: 1rem; /* Adjust font size as needed */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  /* Hover effect */
+  .btn-link:hover {
+    color: #7a3d9c; /* Change color on hover for a visual effect */
+    text-decoration: underline; /* Optionally add underline on hover */
+  }
+/* Purple button styling */
+.btn-primary {
+    background-color: #a363d3; /* Updated background color */
+    border-color: #a363d3; /* Match border to background color */
+    color: #ffffff;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+  }
+  
+  /* Hover effect */
+  .btn-primary:hover {
+    background-color: #b97dd8; /* Slightly lighter purple on hover */
+    border-color: #b97dd8;
+    transform: scale(1.05); /* Slight zoom effect */
+  }
+  
+  /* Active effect (when clicked) */
+  .btn-primary:active {
+    background-color: #8c4cb8; /* Darker purple when pressed */
+    border-color: #8c4cb8;
+    transform: scale(0.98); /* Slight compression on click */
+  }
+  

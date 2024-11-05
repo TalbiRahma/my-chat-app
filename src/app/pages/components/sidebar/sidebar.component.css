@@ -1,0 +1,138 @@
+/* Sidebar container */
+.sidebar {
+  width: auto;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-top: 5px;
+  gap: 35px;
+}
+
+/* User header (profile picture, name, icons) */
+.user-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  width: auto;
+  gap: 10px;
+  /*background-color: rgba(107, 64, 140, 0.1);*/
+  border-radius: 5px;
+  padding: 10px;
+  
+}
+
+.user-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.user-name {
+  flex: 1;
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #333;
+}
+
+.user-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.user-icons fa-icon {
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.user-icons fa-icon:hover {
+  color: rgba(107, 64, 140, 0.7);
+}
+
+.action-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%; /* Set width to 100% or any specific width you want */
+  max-width: 600px; /* You can set a maximum width for larger screens */
+  margin: 0 auto; /* Center the action section */
+}
+
+/* Search bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: rgba(107, 64, 140, 0.5);
+  border-radius: 10px;
+  padding: 10px;
+  height: 40px;
+  flex-grow: 1; /* Allow the search bar to grow and take available space */
+  min-width: 0; /* Prevent overflow if content is too long */
+}
+
+.search-bar input[type="text"] {
+  margin-left: 6px;
+  background: transparent;
+  border: none;
+  color: white;
+  width: 100%; /* Ensure input takes full width of the search bar */
+}
+
+.search-bar input[type="text"]:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.search-bar input::placeholder {
+  border: none;
+  color: white;
+  font-size: 15px;
+}
+
+.add-btn {
+  display: flex;
+  align-items: center;
+  background-color: rgba(107, 64, 140, 0.5);
+  border-radius: 10px;
+  padding: 10px;
+  height: 40px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 40px; /* Customize the width as needed */
+  min-width: 40px; /* Ensure button has a minimum width */
+}
+.sender-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between sender items */
+    padding: 20px;
+    max-height: 600px; /* Adjust height as needed */
+    overflow-y: auto; /* Scrollable if content overflows */
+    /*background-color: rgba(255, 255, 255, 0.1); /* Light background for the container */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Initial state: hidden scrollbar */
+.sender-list::-webkit-scrollbar {
+    width: 1px; /* Hide the scroll bar initially */
+    transition: width 0.3s ease; /* Smooth transition for the scrollbar width */
+}
+
+/* Show scrollbar on hover */
+.sender-list:hover::-webkit-scrollbar {
+    width: 8px; /* Show scroll bar on hover */
+}
+
+.sender-list::-webkit-scrollbar-thumb {
+    background-color: #a363d3; /* Customize scroll bar color */
+    border-radius: 4px; /* Rounded corners for the thumb */
+    transition: background-color 0.3s ease; /* Smooth transition for thumb color */
+}
+
+/* Optional: Add hover effect to the thumb for a polished look */
+.sender-list:hover::-webkit-scrollbar-thumb {
+    background-color: #8c5aa6; /* Slightly different shade on hover */
+}

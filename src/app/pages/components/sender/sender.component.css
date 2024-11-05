@@ -1,0 +1,31 @@
+.sender-component {
+    display: flex; /* Aligns items in a row */
+    align-items: center; /* Vertically centers items */
+    padding: 5px; /* Adds some padding around the component */
+    background-color: rgba(107, 64, 140, 0.1); /* Light background for distinction */
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 10px; /* Space between sender components */
+  }
+  
+  .sender-image {
+    width: 40px; /* Adjust image size */
+    height: 40px; /* Adjust image size */
+    border-radius: 50%; /* Makes the image circular */
+    margin-right: 10px; /* Space between the image and text */
+  }
+  
+  .sender-info {
+    display: flex; /* Allows stacking of name and message */
+    flex-direction: column; /* Aligns children vertically */
+  }
+  
+  .sender-name {
+    font-weight: bold; /* Makes the name bold */
+    color: #333; /* Color for the sender's name */
+  }
+  
+  .sender-message {
+    color: #666; /* Color for the message text */
+    font-size: 14px; /* Font size for the message */
+  }
+  

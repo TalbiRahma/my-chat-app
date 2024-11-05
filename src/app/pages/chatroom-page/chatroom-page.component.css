@@ -1,0 +1,64 @@
+
+/* Set the background image for the main container */
+.main-container {
+    background-image: url('../../../../public/bg.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    padding: 2rem;
+    min-height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Style for the inner container */
+  .row {
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    max-width: 1600px; /* Adjust width as needed */
+    width: 100%;
+    height: 90vh; /* Adjust height as needed */
+    overflow: hidden;
+  }
+  
+  /* Column card styles */
+  .card {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.0); /* Transparent background */
+    height: 100%; /* Full height */
+    border: 1px solid rgba(255, 255, 255, 0.4);
+  
+  }
+  
+  /* Header, Discussion, and Text-Zone styling */
+  .min-height-80 {
+    min-height: 80px;
+  }
+  
+  .message-container {
+    overflow-y: auto;
+    padding: 1rem;
+  }
+  
+  .background-grey {
+    background-color: rgba(255, 255, 255, 0.0); /* Lighter opacity */
+  }
+  
+  /* Center text in the card headers */
+  .card h3 {
+    text-align: center;
+    font-weight: bold;
+  }
+
+/* Header card styles */
+.header-card {
+  border-bottom: 1px solid rgba(107, 64, 140, 0.3);
+}
+
+.message-zone {
+ border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+  
+  

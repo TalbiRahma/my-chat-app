@@ -1,0 +1,91 @@
+/* Discussion container */
+.discussion-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between messages */
+    padding: 20px;
+    max-height: 1000px; /* Adjust height as needed */
+    overflow-y: auto; /* Scrollable if content overflows */
+    background-color: rgba(255, 255, 255, 0.1); /* Light background for the container */
+    border-radius: 8px;
+}
+
+/* General message style */
+.message {
+    max-width: 60%; /* Messages won't exceed this width */
+    padding: 10px;
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Sender message style */
+.sender-message {
+    align-self: flex-start;
+    background-color: #a363d3;
+    color: white;
+    border-top-left-radius: 0;
+}
+
+/* Recipient message style */
+.recipient-message {
+    align-self: flex-end;
+    background-color: #e0e0e0;
+    color: #333;
+    border-top-right-radius: 0;
+}
+
+/* Message text */
+.message-text {
+    margin: 0;
+    font-size: 15px;
+}
+
+/* Message time */
+.message-time {
+    align-self: flex-end;
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Main discussion container */
+.discussion-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    overflow-y: auto; /* Enables scroll for the main container */
+    max-height: 100%; /* Ensure it doesn’t exceed parent container’s height */
+}
+
+/* Individual message styling without overflow */
+.message {
+    max-width: 70%; /* Adjust width as needed */
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px 0;
+}
+
+/* Initial state: hidden scrollbar */
+.discussion-container::-webkit-scrollbar {
+    width: 1px; /* Hide the scroll bar initially */
+    transition: width 0.3s ease; /* Smooth transition for the scrollbar width */
+}
+
+/* Show scrollbar on hover */
+.discussion-container:hover::-webkit-scrollbar {
+    width: 8px; /* Show scroll bar on hover */
+}
+
+.discussion-container::-webkit-scrollbar-thumb {
+    background-color: #a363d3; /* Customize scroll bar color */
+    border-radius: 4px;
+    transition: background-color 0.3s ease; /* Smooth transition for thumb color */
+}
+
+/* Optional: Add hover effect to the thumb for a polished look */
+.discussion-container:hover::-webkit-scrollbar-thumb {
+    background-color: #8c5aa6; /* Slightly different shade on hover */
+}
+

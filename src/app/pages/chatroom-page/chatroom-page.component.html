@@ -1,0 +1,40 @@
+<div class="main-container">
+    <div class="row">
+      <!-- Column for Users -->
+      <div class="card col-md-3">
+        <div class="col pl-0 pr-0">
+          <div class="sidebar border-none">
+            <app-sidebar></app-sidebar>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Column for Messages/Discussion -->
+      <div class="card col-md-6 pl-0 pr-0 background-grey border-none">
+        <div class="col p-0 d-flex flex-column justify-content-between" style="height: 100%;">
+          <!-- Header Component -->
+          <div class="header-card">
+            <app-header></app-header>
+          </div>
+  
+          <!-- Discussion Component -->
+          <div class="mb-2 message-container" style="min-height: 400px; overflow-y: auto;">
+            <app-discussion></app-discussion>
+          </div>
+  
+          <!-- Text-Zone Component -->
+          <div class="message-zone">
+              <app-message-zone></app-message-zone>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Column for Sender Information -->
+      <div class="card col-md-3 ml-2">
+        <div class="col pl-0 pr-0">
+            <app-details-panel></app-details-panel>
+        </div>
+      </div>
+    </div>
+  </div>
+  

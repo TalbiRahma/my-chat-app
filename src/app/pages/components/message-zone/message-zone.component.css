@@ -1,0 +1,80 @@
+.message-zone {
+    display: flex; /* Use flexbox for layout */
+    padding: 10px; /* Add some padding */
+    background-color: rgba(255, 255, 255, 0.1); /* Light background */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.input-section {
+    display: flex; /* Align all items in a row */
+    align-items: center; /* Vertically center items */
+    flex-grow: 1; /* Allow input section to grow */
+}
+
+.icon-section {
+    display: flex; /* Align icons horizontally */
+    gap: 10px; /* Space between icons */
+    margin-right: 10px; /* Space between icons and input */
+}
+
+  
+.icon-section fa-icon {
+    color: #333; /* Icon color */
+    cursor: pointer; /* Change cursor on hover */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  /* Optional: Add hover effect for icons */
+.icon-section fa-icon:hover {
+    color: rgba(107, 64, 140, 0.7); /* Change color on hover */
+  }
+
+.icon {
+    color: #333; /* Icon color */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 20px; /* Icon size */
+}
+
+.message-input {
+    flex-grow: 1; /* Allow input to take available space */
+    padding: 10px; /* Padding inside the input */
+    border-radius: 5px; /* Rounded input corners */
+    outline: none; /* Remove outline on focus */
+    background-color: rgba(255, 255, 255, 0.1); /* Input background */
+    margin-right: 8px; /* Space between input and icon */
+    border: none;
+    width: 100%;
+    color: gray;
+}
+
+.message-input:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  
+.message-input::placeholder {
+    border: none;
+    color: gray;
+    font-size: 18px;
+  }
+
+.input-icon {
+    color: #333; /* Color of the input icon */
+    margin-right: 8px; /* Space between icon and button */
+    font-size: 20px; /* Adjust icon size */
+    cursor: pointer; /* Change cursor on hover */
+    transition: color 0.3s;
+}
+
+.input-icon:hover{
+    color: rgba(107, 64, 140, 0.7); /* Change color on hover */
+}
+  
+.send-button {
+    background-color: rgba(107, 64, 140, 0.5); /* Button background */
+    color: white; /* Button text color */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Rounded button corners */
+    padding: 10px 15px; /* Button padding */
+    cursor: pointer; /* Pointer cursor */
+}
